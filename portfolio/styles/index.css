@@ -1,0 +1,74 @@
+
+
+.img-grid {
+    display: grid;
+    margin-top: 30px;
+    /*padding: 20px;*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    padding: 0 250px;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-grid img {
+    aspect-ratio: 391/145;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+    max-width: 800px;
+}
+
+.img3-grid {
+    display: grid;
+    margin-top: 30px;
+    /*padding: 20px;*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    padding: 0 250px;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img3-grid img {
+
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+
+}
+#skydive {
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-body {
+    background-color: #4f4f4f;
+    padding: 20px;
+
+}
+
+.modal-footer, .modal-header {
+    background-color: #ff1e00;
+}
+.modal-content {
+    background-color: #000000;
+}
+.form-control {
+    background-color: #e7e7e7;
+}
+.modal-body label {
+    text-align: left;
+}
+
+#acatitle{
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

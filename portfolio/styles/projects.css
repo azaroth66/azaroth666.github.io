@@ -1,0 +1,68 @@
+/* Ensure unordered lists are left-aligned */
+ul {
+    text-align: left;
+    padding-left: 1.5rem; /* add some left padding for better readability */
+}
+
+/* Base style for project images (if used elsewhere) */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+.img-grid {
+    display: grid;
+    margin-top: 30px;
+    /*padding: 20px;*/
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    padding: 0 250px;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-grid img {
+    aspect-ratio: 391/145;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+
+}
+.img-grid-ai {
+    display: grid;
+    margin-top: 30px;
+    /*padding: 20px;*/
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    padding: 0 250px;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-grid-ai img {
+    aspect-ratio: 391/145;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+
+}
+/* Float both images to the right */
+#triviaimg
+{
+    float: right;
+    margin: 0 0 20px 20px;  /* add left margin to separate from text */
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.clearfix {
+    padding: 3em;
+    text-align: left;
+}

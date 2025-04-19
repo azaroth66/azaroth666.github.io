@@ -1,0 +1,491 @@
+
+.nav {
+    background-color: #ff1e00;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-link a  {
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+.navbar-nav {
+
+    display: flex;
+align-items: flex-start;
+}
+.navbar-toggler{
+    display: flex;
+    align-items: flex-start;
+}
+.white, .white a {
+    color: white;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+#navbarNav {
+    /*text-align: right;*/
+    /*display: block;*/
+    /*float: right;*/
+}
+ul.navbar-nav a:hover{
+    color: black;
+}
+
+.navbar-brand{
+
+margin-left: auto;
+    color: white;
+}
+body {
+    background-image: url("/media/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    font-size: large;
+    font-family: Inter, Inter Fallback, sans-serif;
+
+        padding-top: 56px;
+
+}
+.content-container {
+    background: linear-gradient(to bottom, #343434 75%, #4f4f4f 100%);
+
+
+    padding: 20px;
+    border: 1px solid #000000;
+}
+.sidebar {
+    background-color: #6f6f6f;
+    padding: 15px;
+}
+.intro-container {
+    box-shadow: #1c1c1c 5px 5px 5px;
+
+    /*background-image: url("/media/img.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+.cont{
+    margin-top: 6em;
+    padding-top: 6em;
+}
+.row {
+    display: flex;
+
+}
+
+footer, footer a{
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+ul {
+    list-style-type: disc;
+}
+div.inner-box {
+    background-color: #343434;         /* Set background color */
+    padding: 20px;                     /* Add some inner spacing */
+    margin-bottom: 20px;               /* Add spacing below each box */
+    width: 60%;
+    /* Two-layer border effect using multiple box shadows:
+       The first (inner) shadow is black, and the outer is #ff1e00.
+       Adjust the pixel values to increase or decrease the border thickness. */
+    box-shadow:
+            0 0 5px 3px black,
+            0 0 5px 3px #ff1e00;
+    /* Text shadows: First shadow offsets text to bottom right in black,
+       second shadow offsets to top left in #ff1e00. */
+
+    font-size: 1.1em;
+    /* Optional: set text color to ensure proper contrast */
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.img-grid-ai img {
+    max-width: 500px;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+
+}
+.img-grid-ai {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;       /* space between each image */
+    flex-shrink: 0;  /* don’t let it collapse if the text is long */
+    padding-right: 4em;
+}
+
+#flyers {
+    display: flex;
+    justify-content: space-between; /* text on left, images on right */
+    align-items: flex-start;         /* top‑align the columns */
+    gap: 40px;                       /* space between columns */
+    padding: 0;                      /* remove any old paddings/floats */
+    float: none;
+    margin: 2em;
+}
+
+.flyers-text {
+    font-size: 1.1em;
+
+    word-spacing: 0.1em;
+}
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tool-item {
+    aspect-ratio: 1 / 1;         /* forces a square cell */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c2c2c;         /* optional light background */
+    border-radius: 2px;          /* optional rounding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tool-item img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+/* container split into two columns */
+#trivia {
+    display: flex;
+    align-items: flex-start;    /* top‑align text + image */
+    justify-content: space-between;
+    gap: 40px;
+    margin: 2em;
+}
+
+/* left column */
+.trivia-text, .uno-text {
+    flex: 1;                    /* fill available space */
+    font-size: 1.1em;
+    word-spacing: 0.1em;
+}
+
+/* tech‑logo grid (same as Flyers) */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin-top: 1em;
+}
+
+.tool-item {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c2c2c;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tool-item img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+/* right column */
+.trivia-img {
+    flex-shrink: 0;             /* don’t shrink below image size */
+}
+
+.trivia-img img {
+    max-width: 500px;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+}
+.sidebar {
+
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical center of all children */
+    align-items: center;      /* horizontal center of all children */
+    height: 100%;             /* ensure it stretches to fill the row */
+}
+
+.sidebar img {
+
+    height: 600px;      /* or your desired height */
+    width: auto;        /* keep aspect ratio */
+    margin-bottom: 1em;
+}
+.bio-summary {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.bio-list {
+    margin-bottom: 1.5em;
+    padding-left: 1.25em;
+}
+
+.bio-list li {
+    margin-bottom: 0.5em;
+}
+
+#biopara h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+/* 2‑column flex split */
+#uno {
+    display: flex;
+    align-items: flex-start;       /* top‑align text + image */
+    justify-content: space-between;
+    gap: 40px;
+    margin: 2em 0;
+}
+
+/* left text column expands */
+.uno-text {
+    flex: 1;
+}
+
+/* reuse your existing grid styles */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 600px;   /* adjust as needed */
+    margin-top: 1em;
+}
+
+/* cells square + centered */
+.tool-item {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c2c2c;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tool-item img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+/* right image column */
+.uno-img {
+    flex-shrink: 0;
+}
+
+.uno-img img {
+    max-width: 500px;
+    display: block;
+    box-shadow: #1c1c1c 5px 5px 5px;
+}
+/* 1) Give each major section vertical breathing room and a bottom divider */
+#flyers,
+#trivia,
+#uno {
+    padding: 3rem 0;               /* space above & below */
+    border-bottom: 3px solid #444; /* subtle divider */
+    margin: 0;                     /* reset any default margins */
+}
+
+/* 2) Remove the divider on the very last section */
+#uno {
+    border-bottom: none;
+}
+
+/* 3) (Optional) Alternate background for extra contrast */
+#flyers {
+    background-color: rgba(255,255,255,0.03);
+}
+#trivia {
+    background-color: rgba(0,0,0,0.03);
+}
+/* #uno will just sit on the page background */
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff1e00;     /* your accent color */
+    color: #fff;
+    padding: 0.75em 1.25em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    z-index: 1000;                 /* sit above other content */
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.contact-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.interests-block h4 {
+    margin-bottom: 0.5em;
+}
+
+.interests-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;        /* space between list and image */
+}
+
+.interests-content .bio-list {
+    flex: 1;            /* let the list take up remaining width */
+}
+
+.interests-img {
+    max-width: 400px;   /* or whatever size fits */
+    height: auto;
+    border-radius: 4px; /* optional rounding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-shrink: 0;     /* don’t let it get smaller */
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+}
+
+/* Replace your .hobby-gallery rules with: */
+.hobby-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 2em;
+}
+
+.hobby-gallery img {
+    width: 100%;    /* fill the grid cell’s width */
+    height: auto;   /* preserve the photo’s original aspect ratio */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* call‑out style for each project’s reflection */
+.reflection-text {
+    margin: 2rem 0;                    /* space above & below the reflection */
+    padding: 1.25rem 1.5rem;           /* inner breathing room */
+    background-color: rgba(255,255,255,0.05); /* very subtle tinted box */
+    border-left: 4px solid #ff1e00;    /* bold accent color on the left */
+    border-radius: 4px;                /* soften the corners */
+    font-style: italic;                /* optional: italics for “reflection” tone */
+    color: #ddd;                       /* make text a bit lighter/dimmer */
+    line-height: 1.5;                  /* improve readability */
+}
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff1e00;
+    color: #fff;
+    padding: 0.75em 1.25em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+
+    /* stack the main label and details vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* for smooth growing */
+    transition: transform 0.2s ease, padding 0.2s ease;
+}
+
+.contact-button .contact-details {
+    display: none;            /* hidden until hover */
+    margin-top: 0.5em;
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 1.2;
+    color: inherit;           /* inherit the white (or whatever) from the parent */
+    text-decoration: none;    /* turn off the underline */
+}
+.contact-button .contact-details a:hover,
+.contact-button .contact-details a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-button:hover {
+    transform: scale(1.1);     /* grow */
+    padding: 2em 1.5em;        /* a bit more padding when grown */
+
+}
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-link:hover,
+.contact-link:focus {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-button:hover .contact-details {
+    display: block;            /* show extra info */
+}
+/* marquee wrapper: hide overflow */
+.badge-marquee {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* the flex‑row track that moves */
+.badge-track {
+    display: flex;
+    gap: 1rem;
+    animation: marquee 25s linear infinite;
+}
+
+/* badge sizing */
+.badge-track img {
+    flex: 0 0 auto;
+    height: 64px;     /* tweak as you like */
+    width: auto;
+}
+
+/* keyframes: shift left by half the track’s width (one set) */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+#reef, #greatwhite, #skydive {
+    max-width: 1200px;
+    border-radius: 10px;      
+
+}
+
+/* tighten up on mobile so it never overflows */
+@media (max-width: 768px) {
+    .reflection-text {
+        margin: 1.5rem 0;
+        padding: 1rem 1rem;
+    }
+}
