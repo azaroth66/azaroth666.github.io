@@ -1,4 +1,8 @@
-
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* avoids little inline gaps */
+}
 .nav {
     background-color: #ff1e00;
 }
@@ -298,6 +302,17 @@ div.inner-box {
     max-width: 500px;
     display: block;
     box-shadow: #1c1c1c 5px 5px 5px;
+}
+.cont > .intro-container .row > div {
+    min-width: 0;
+}
+#flyers > .flyers-text,
+#flyers > .img-grid-ai,
+#trivia > .trivia-text,
+#trivia > .trivia-img,
+#uno > .uno-text,
+#uno > .uno-img {
+    min-width: 0;
 }
 /* 1) Give each major section vertical breathing room and a bottom divider */
 #flyers,
