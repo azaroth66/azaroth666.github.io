@@ -98,7 +98,7 @@ div.inner-box {
     background-color: #343434;         /* Set background color */
     padding: 20px;                     /* Add some inner spacing */
     margin-bottom: 20px;               /* Add spacing below each box */
-    width: 60%;
+    width: 80%;
     /* Two-layer border effect using multiple box shadows:
        The first (inner) shadow is black, and the outer is #ff1e00.
        Adjust the pixel values to increase or decrease the border thickness. */
@@ -111,6 +111,8 @@ div.inner-box {
     font-size: 1.1em;
     /* Optional: set text color to ensure proper contrast */
     color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
 
