@@ -458,11 +458,22 @@ div.inner-box {
 .contact-link {
     color: inherit;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;            /* space between icon & text */
+    vertical-align: middle; /* keep it aligned with surrounding text */
+
+}
+.contact-link img {
+    display: inline-block;
+    margin: 0;              /* reset any default margins */
 }
 .contact-link:hover,
 .contact-link:focus {
     color: inherit;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
 .contact-button:hover .contact-details {
     display: block;            /* show extra info */
